@@ -14,13 +14,6 @@ export default function Projects() {
       link: "https://www.ghardilado.com"
     },
     {
-      title: "YUGA SHOPIFY STORE",
-      category: "E-COMMERCE PLATFORM",
-      description: "Developed a high-performance custom Shopify theme, integrated third-party APIs for inventory and logistics synchronization, and executed performance optimization audits.",
-      technologies: ["Shopify Liquid", "JavaScript", "GraphQL", "TailwindCSS"],
-      link: "#"
-    },
-    {
       title: "TELEGRAMDRIVE",
       category: "DESKTOP APPLICATION",
       description: "Convert a Telegram account into an unlimited, secure cloud storage drive. Engineered an asynchronous file chunking pipeline and end-to-end payload encryption.",

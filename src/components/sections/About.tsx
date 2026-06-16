@@ -74,7 +74,7 @@ export default function About() {
                   During my time in field research with <span className="text-white font-medium">NWN Gujarat</span>, I compiled geographic data and conducted field surveys. My classroom manager mindset helps me build systems that are intuitive, scalable, and human-centric.
                 </p>
                 <p>
-                  As a builder, I focus on shipping practical, automated solutions. At GharDilaDo, I developed user-facing features and implemented automated pipelines using React, Supabase, and n8n. I also delivered projects like the <span className="text-white font-medium">Yuga Shopify Store</span>, driving custom theme development, API integrations, and performance optimization.
+                  As a builder, I focus on shipping practical, automated solutions. At GharDilaDo, I developed user-facing features and implemented automated pipelines using React, Supabase, and n8n. I also worked on projects like the <span className="text-white font-medium">Yuga Launchpad</span>, focusing on low-latency state synchronization and web3 compatibility layers.
                 </p>
               </div>
             </div>
