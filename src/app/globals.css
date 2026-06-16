@@ -1,26 +1,261 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #000000;
+  --color-foreground: #ededed;
+  --color-muted: #888888;
+  --color-border: #222222;
+  --color-border-hover: #333333;
+
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ededed;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
+  /* We will force dark mode for this specific elite aesthetic, but keep vars here just in case */
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #111111;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
 }
+
+/* Neobrutalist Card Styling */
+.card-border {
+  border: 2px solid #ffffff !important;
+  background-color: #0b0b0b !important;
+  background-image: none !important;
+  border-radius: 0px !important;
+  box-shadow: 4px 4px 0px #00F0FF !important;
+  transition: all 0.15s ease-in-out !important;
+  backdrop-filter: none !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-border:hover {
+  transform: translate(-3px, -3px) !important;
+  box-shadow: 7px 7px 0px #8B5CF6 !important;
+  border-color: #00F0FF !important;
+}
+
+.card-border:active {
+  transform: translate(0px, 0px) !important;
+  box-shadow: 0px 0px 0px transparent !important;
+}
+
+.card-border::before {
+  display: none !important;
+}
+
+/* Force sharp edges globally for neobrutalist style */
+[class*="rounded"],
+.card-border,
+[class*="card-border"],
+#hero > div,
+#contact > div > div,
+#resume > div > div,
+header > div > div,
+.cursor-reticle {
+  border-radius: 0px !important;
+}
+
+/* Neobrutalist Floating Navbar */
+header > div > div {
+  border-radius: 0px !important;
+  border: 2px solid #ffffff !important;
+  background-color: #000000 !important;
+  box-shadow: 4px 4px 0px #00F0FF !important;
+}
+
+/* Mobile Nav Dropdown */
+header div[class*="bg-black/90"] {
+  border-radius: 0px !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 4px 4px 0px #8B5CF6 !important;
+  background-color: #000000 !important;
+}
+
+/* Hero container override */
+#hero > div {
+  border-radius: 0px !important;
+  border: 2px solid #ffffff !important;
+  background-color: #000000 !important;
+  box-shadow: 6px 6px 0px #00F0FF !important;
+  backdrop-filter: none !important;
+}
+
+/* Custom Cursor Reticle Square */
+.cursor-reticle {
+  border-radius: 0px !important;
+  border-width: 2px !important;
+  border-color: #00F0FF !important;
+}
+
+/* Brutalist Buttons Override (Primary) */
+a[class*="bg-white"],
+button[class*="bg-white"],
+a[href="#contact"] {
+  border-radius: 0px !important;
+  border: 2px solid #ffffff !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  box-shadow: 3px 3px 0px #00F0FF !important;
+  transition: all 0.15s ease-in-out !important;
+  font-family: var(--font-mono) !important;
+}
+
+a[class*="bg-white"]:hover,
+button[class*="bg-white"]:hover,
+a[href="#contact"]:hover {
+  background-color: #00F0FF !important;
+  color: #000000 !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 5px 5px 0px #8B5CF6 !important;
+}
+
+a[class*="bg-white"]:active,
+button[class*="bg-white"]:active,
+a[href="#contact"]:active {
+  transform: translate(0px, 0px) !important;
+  box-shadow: 0px 0px 0px transparent !important;
+}
+
+/* Secondary Brutalist Buttons (Outlines & Transparent links) */
+a[class*="bg-transparent"][class*="border"],
+a[class*="bg-white/5"][class*="border"],
+button[class*="bg-transparent"][class*="border"],
+a[href="/resume.pdf"][class*="bg-transparent"],
+a[href*="github.com"][class*="bg-transparent"],
+a[href*="linkedin.com"][class*="bg-transparent"],
+a[href*="mailto:"],
+a[class*="border-white/10"],
+a[class*="border-white/5"] {
+  border-radius: 0px !important;
+  border: 2px solid #ffffff !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  box-shadow: 3px 3px 0px #8B5CF6 !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+a[class*="bg-transparent"][class*="border"]:hover,
+a[class*="bg-white/5"][class*="border"]:hover,
+button[class*="bg-transparent"][class*="border"]:hover,
+a[href="/resume.pdf"][class*="bg-transparent"]:hover,
+a[href*="github.com"][class*="bg-transparent"]:hover,
+a[href*="linkedin.com"][class*="bg-transparent"]:hover,
+a[href*="mailto:"]:hover,
+a[class*="border-white/10"]:hover,
+a[class*="border-white/5"]:hover {
+  background-color: #8B5CF6 !important;
+  color: #ffffff !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 5px 5px 0px #00F0FF !important;
+}
+
+a[class*="bg-transparent"][class*="border"]:active,
+a[class*="bg-white/5"][class*="border"]:active,
+button[class*="bg-transparent"][class*="border"]:active,
+a[href="/resume.pdf"][class*="bg-transparent"]:active,
+a[href*="github.com"][class*="bg-transparent"]:active,
+a[href*="linkedin.com"][class*="bg-transparent"]:active,
+a[href*="mailto:"]:active,
+a[class*="border-white/10"]:active,
+a[class*="border-white/5"]:active {
+  transform: translate(0px, 0px) !important;
+  box-shadow: 0px 0px 0px transparent !important;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: #00F0FF;
+  color: #000;
+}
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00F0FF;
+}
+
+/* Scanline / CRT overlay effect */
+.crt-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 4px, 6px 100%;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+/* Cybernetic dot-matrix grid overlay */
+.cyber-grid {
+  position: fixed;
+  inset: 0;
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* Text glow utilities */
+.glow-text-cyan {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.3), 0 0 20px rgba(0, 240, 255, 0.1);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.3), 0 0 20px rgba(139, 92, 246, 0.1);
+}
+
+/* Neon Glow borders */
+.glow-border-cyan {
+  box-shadow: inset 0 0 8px rgba(0, 240, 255, 0.2), 0 0 8px rgba(0, 240, 255, 0.1);
+}
+
+/* Animated status indicator LED */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.led-indicator {
+  animation: blink 2s infinite ease-in-out;
+}
+
