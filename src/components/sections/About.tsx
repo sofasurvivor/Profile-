@@ -68,13 +68,13 @@ export default function About() {
               <h3 className="text-lg font-medium text-white mb-4">{"// THE CONVERGENCE OF EDUCATION & TECHNOLOGY"}</h3>
               <div className="space-y-4 text-white/60 font-light text-sm leading-relaxed">
                 <p>
-                  I'm a builder, an AI-native developer, and at my core—an educator. My journey spans from teaching Science in JNV classrooms to building India's smartest rental platform, <span className="text-white font-medium">GharDilaDo.com</span>.
+                  I'm a builder, an AI-native developer, and at my core—an educator. My journey spans from teaching Science in JNV classrooms to working as a full-stack developer on India's smartest rental platform, <span className="text-white font-medium">GharDilaDo.com</span>.
                 </p>
                 <p>
                   During my time in field research with <span className="text-white font-medium">NWN Gujarat</span>, I compiled geographic data and conducted field surveys. My classroom manager mindset helps me build systems that are intuitive, scalable, and human-centric.
                 </p>
                 <p>
-                  As a developer, I don't just write code; I ship complete products. I built GharDilaDo from scratch using AI-native workflows, Cursor, React, Supabase, and n8n to deliver a seamless, automated renting experience that solves real user problems.
+                  As a builder, I focus on shipping practical, automated solutions. At GharDilaDo, I developed user-facing features and implemented automated pipelines using React, Supabase, and n8n. I also delivered projects like the <span className="text-white font-medium">Yuga Shopify Store</span>, driving custom theme development, API integrations, and performance optimization.
                 </p>
               </div>
             </div>

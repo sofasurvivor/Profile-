@@ -14,11 +14,11 @@ export default function Projects() {
       link: "https://www.ghardilado.com"
     },
     {
-      title: "TELEGRAM-DRIVE",
+      title: "TELEGRAMDRIVE",
       category: "DESKTOP APPLICATION",
       description: "Convert a Telegram account into an unlimited, secure cloud storage drive. Engineered an asynchronous file chunking pipeline and end-to-end payload encryption.",
       technologies: ["TypeScript", "Tauri", "Rust", "React", "Tokio"],
-      link: "https://github.com/sofasurvivor/Telegram-Drive"
+      link: "https://github.com/sofasurvivor/Telegramdrive"
     },
     {
       title: "YUGA LAUNCHPAD",
@@ -28,11 +28,11 @@ export default function Projects() {
       link: "https://github.com/sofasurvivor/yuga-launchpad"
     },
     {
-      title: "DEVANSH PORTFOLIO",
-      category: "CREATIVE PORTFOLIO INFRA",
-      description: "Personal portfolio framework featuring flexible, modular card structures and optimized viewport rendering methods.",
-      technologies: ["HTML5", "TailwindCSS", "IntersectionObserver"],
-      link: "https://github.com/sofasurvivor/devansh-portfolio"
+      title: "FREQTRADE STRATEGIES",
+      category: "ALGORITHMIC TRADING INFRASTRUCTURE",
+      description: "A repository of quantitative crypto trading strategies, custom technical indicators, and hyperparameter optimization configurations for the Freqtrade backtesting bot.",
+      technologies: ["Python", "Freqtrade", "Pandas", "NumPy", "Scikit-Learn"],
+      link: "https://github.com/sofasurvivor/Freqtradestrategies"
     }
   ];
 
