@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
@@ -9,6 +9,7 @@ export default function Contact() {
     { name: "GITHUB", url: "https://github.com/sofasurvivor", icon: FaGithub, label: "@sofasurvivor" },
     { name: "LINKEDIN", url: "https://www.linkedin.com/in/rahul-m-380344210", icon: FaLinkedin, label: "@rahul-m" },
     { name: "EMAIL", url: "mailto:rahulmina72@gmail.com", icon: Mail, label: "rahulmina72@gmail.com" },
+    { name: "PHONE", url: "tel:+918696629026", icon: Phone, label: "+91 86966 29026" },
   ];
 
   return (

@@ -67,7 +67,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-base sm:text-lg text-white/60 max-w-2xl font-light leading-relaxed mb-10"
         >
-          I am <span className="text-white font-medium">Rahul Mina</span>. An AI Generalist, Educator, and Lead Developer behind GharDilaDo.com, specializing in building full-stack PropTech and autonomous AI-native automation pipelines from scratch to production.
+          I am <span className="text-white font-medium">Rahul Mina</span>. An AI Generalist, Educator, and Lead Full-Stack Developer on GharDilaDo.com, specializing in building full-stack PropTech solutions, custom theme development for the Yuga Shopify Store, and autonomous AI-native automation pipelines.
         </motion.p>
 
         <motion.div

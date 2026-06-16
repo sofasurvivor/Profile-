@@ -9,9 +9,16 @@ export default function Projects() {
     {
       title: "GHARDILADO.COM",
       category: "PROPTECH PLATFORM",
-      description: "India's smartest rental platform built from scratch to production. Solves renting workflows with smart descriptions, automated n8n pipelines, and KYC verification.",
+      description: "Led full-stack engineering for India's smartest rental platform, building automated rent workflows, smart descriptions using generative AI, KYC verification, and n8n pipeline integrations.",
       technologies: ["React", "Vite", "Supabase", "n8n", "Agentic AI"],
       link: "https://www.ghardilado.com"
+    },
+    {
+      title: "YUGA SHOPIFY STORE",
+      category: "E-COMMERCE PLATFORM",
+      description: "Developed a high-performance custom Shopify theme, integrated third-party APIs for inventory and logistics synchronization, and executed performance optimization audits.",
+      technologies: ["Shopify Liquid", "JavaScript", "GraphQL", "TailwindCSS"],
+      link: "#"
     },
     {
       title: "TELEGRAMDRIVE",

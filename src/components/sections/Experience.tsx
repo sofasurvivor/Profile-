@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 export default function Experience() {
   const experiences = [
     {
-      company: "GHARDILADO",
+      company: "GHARDILADO.COM",
       role: "LEAD FULL-STACK DEVELOPER",
       period: "JUN 2024 - PRESENT",
-      description: "Lead developer for India's smartest rental platform. Designed, coded, and deployed the entire full-stack PropTech ecosystem using Cursor, Agentic AI, React, Supabase, and n8n."
+      description: "Served as Lead Full-Stack Developer for India's smartest rental platform. Engineered core PropTech solutions, built automated n8n pipelines, integrated Supabase, and optimized the listing and KYC verification workflows."
     },
     {
       company: "NWN GUJARAT",
