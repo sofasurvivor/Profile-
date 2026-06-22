@@ -41,9 +41,16 @@ export default function Achievements() {
       type: "PDF"
     },
     {
-      title: "Pre-Live Practical Mission",
-      description: "Practical mission hardware debugging, systems calibration, and validation under time constraints.",
+      title: "Pre-Live Practical Mission - Day 1",
+      description: "Day 1 hardware debugging, systems calibration, and validation under time constraints.",
       file: "/certificates/rm5036_Day 1 Pre Live Practical Mission Final_Certificate.png",
+      category: "SYSTEM_TEST",
+      type: "IMAGE"
+    },
+    {
+      title: "Pre-Live Practical Mission - Day 2",
+      description: "Day 2 validation of hardware debugging, systems calibration, and performance testing.",
+      file: "/certificates/rm5036_Day 2 Pre Live Practical Mission Final_Certificate.png",
       category: "SYSTEM_TEST",
       type: "IMAGE"
     },
@@ -53,6 +60,48 @@ export default function Achievements() {
       file: "/certificates/rm5036_General Knowledge Test_Certificate.png",
       category: "CORE_THEORY",
       type: "IMAGE"
+    },
+    {
+      title: "IBM Data Literacy",
+      description: "IBM SkillsBuild credential validating core competencies in data analysis, interpretation, and data-driven decision making.",
+      file: "/certificates/DataLiteracy_Badge20260619-32-c3j820.pdf",
+      category: "DATA_SCIENCE",
+      type: "PDF"
+    },
+    {
+      title: "TCS MasterCraft DataPlus",
+      description: "Appreciation certificate for successfully completing the TCS MasterCraft DataPlus Overview Course.",
+      file: "/certificates/Rahul_Mina_29524.pdf",
+      category: "DATA_ENG",
+      type: "PDF"
+    },
+    {
+      title: "Effective Leadership",
+      description: "HP LIFE certification covering leadership strategies, ethical management, and team collaboration principles.",
+      file: "/certificates/Effective Leadership.pdf",
+      category: "LEADERSHIP",
+      type: "PDF"
+    },
+    {
+      title: "Business Communications",
+      description: "HP LIFE certification covering effective business messaging, audience analysis, and communication channels.",
+      file: "/certificates/Business Communications.pdf",
+      category: "BUSINESS",
+      type: "PDF"
+    },
+    {
+      title: "Interview Skills",
+      description: "TCS iON certification covering prep work, behavioral strategies, and post-interview processes.",
+      file: "/certificates/Rahul_Mina_5442818.pdf",
+      category: "PROFESSIONAL",
+      type: "PDF"
+    },
+    {
+      title: "Communication Skills",
+      description: "TCS iON certification covering verbal/non-verbal communication, barriers, and effective professional communication.",
+      file: "/certificates/Rahul__5442686.pdf",
+      category: "COMMUNICATION",
+      type: "PDF"
     }
   ];
 
