@@ -120,9 +120,10 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white/60 hover:text-white"
+              className="w-11 h-11 flex items-center justify-center text-white/60 hover:text-white"
+              aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? <X size={16} /> : <Menu size={16} />}
+              {isMobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
           </div>
         </div>

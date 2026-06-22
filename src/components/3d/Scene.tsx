@@ -1,11 +1,32 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 import MorphingLiquidGlass from "./MorphingLiquidGlass";
 import InteractiveParticles from "./InteractiveParticles";
 
 export default function Scene() {
+  const [shouldRender, setShouldRender] = useState(false);
+
+  useEffect(() => {
+    // Only render WebGL Scene on desktop screens to optimize mobile scrolling performance
+    const checkScreen = () => {
+      setShouldRender(window.innerWidth >= 768);
+    };
+    
+    checkScreen();
+    window.addEventListener("resize", checkScreen, { passive: true });
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  if (!shouldRender) {
+    // Return empty but styled background div on mobile
+    return (
+      <div className="fixed inset-0 z-[-1] pointer-events-none bg-black" />
+    );
+  }
+
   return (
     <div className="fixed inset-0 z-[-1] pointer-events-none bg-black">
       <Canvas camera={{ position: [0, 0, 8], fov: 60 }} dpr={[1, 1.5]} gl={{ antialias: true, powerPreference: "high-performance" }}>
